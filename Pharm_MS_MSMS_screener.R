@@ -23,7 +23,7 @@ Target.database <- read_xlsx(path = "Database/Database_pharmaceuticals_environme
 Suspect.database <- read_xlsx(path = "Database/Database_pharmaceuticals_environment.xlsx", sheet = 1)
 #' *Sample name must be typed manually.*
 Sample.name <- "Example_sample"
-#' Check if the folders for Sample.name already exist. 
+#' Check if the folders for Sample.name already exist . 
 #' Folders will be created automatically in accordance to the given value in **Sample.name** variable
 if (dir.exists("Samples/") == FALSE) {dir.create("Samples/")}
 if (dir.exists(paste("Samples/",Sample.name,"/",sep="")) == FALSE) {dir.create(paste("Samples/",Sample.name,"/",sep=""))}
